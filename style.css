@@ -13,7 +13,8 @@ body{
 }
 
 .container{
-  width: 610px;
+  width: 50%;
+  /*width: 610px;*/
   margin: 10px auto;
   border: 5px solid white;
   overflow:hidden;
@@ -104,7 +105,8 @@ ul{
 }
 
 nav {
-  width: 610px;
+  width: 50%;
+  /*width: 610px;*/
   margin: 0 auto;
 }
 
@@ -125,7 +127,7 @@ nav li{
 .nav-menu{
   display: inline-block;
   width: 24.5%;
-  height: 25px;
+  /*height: 25px;*/
   background-color:#DC371B;
   text-align: center;
   font-family:sans-serif;
@@ -153,7 +155,8 @@ nav li{
   border: 3.3px solid white;
 }
 footer {
-  width: 610px;
+  width: 50%;
+  /*width: 610px;*/
   height: 210px;
   margin: 10px auto;
   border: 5px solid white;
@@ -199,8 +202,10 @@ footer li img{
 #logo img {
   width: 40%;
   position: absolute;
-  top: 30px;
-  left: 20px;
+  top: 13.33%;
+  left: 3.29%;
+  /*top: 70px;
+  left: 20px;*/
 }
 #grid-cover img {
   position: absolute;
@@ -210,8 +215,13 @@ footer li img{
 #camera img{
   width: 145%;
   position: absolute;
-  top: -90px;
-  left: -70px;
+  /*height: auto;
+  min-height: 100%;*/
+  /*top: -90px;
+  left: -70px;*/
+  top: -40%;
+  left: -11.5%;
+
 }
 
 .news {
@@ -219,7 +229,8 @@ footer li img{
   border-right: 5px solid white;
   border-top: none;
   border-bottom: none;*/
-  height: 210px;
+  padding-bottom: 17.2%;
+  /*height: 210px;*/
   display: flex;
   border: none;
 }
@@ -228,7 +239,7 @@ footer li img{
   margin: 2px;
   color: gray;
   font-size: 8px;
-  height: 100%;
+  /*height: 100%;   --------------keep an eye on this might be trouble*/
   vertical-align: top;
   padding: 10px;
   font-family: tahoma,sans-serif;
@@ -288,12 +299,12 @@ footer li img{
 
 .top-image{
 box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
-height: 210px;
-
+padding-bottom: 17.2%;
 
 }
+
 .profiles{
-  height: 270px;
+  /*height: 270px;*/
   border: none;
   display: flex;
 
@@ -309,7 +320,6 @@ height: 210px;
   flex:2;
   flex-direction:column;
   position:relative;
-
 }
 
 .right{
@@ -317,6 +327,8 @@ height: 210px;
   overflow:hidden;
   position:relative;
   display; flex;
+  padding-bottom: 44.2%;
+/*  padding-bottom: 25%;*/
 
 }
 
@@ -328,14 +340,13 @@ height: 210px;
   display: flex;
   flex:2;
 
-
 }
 .top-left{
   flex:1;
   overflow:hidden;
   position: relative;
   display; flex;
-
+  padding-bottom: 22.1%;
 }
 .top-left:hover{
   animation: borderFlash 1.5s infinite;
@@ -345,7 +356,7 @@ height: 210px;
   overflow:hidden;
   position:relative;
   display: flex;
-
+  padding-bottom: 22.1%;
 }
 
 .top-right:hover{
@@ -357,6 +368,7 @@ height: 210px;
   position:relative;
   overflow:hidden;
   display: flex;
+  padding-bottom: 22.1%
 }
 
 .bottom:hover{
