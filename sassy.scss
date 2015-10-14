@@ -1,12 +1,16 @@
+$boxGray: rgba(170, 170, 170, 0.5);
+$peraltaRed: #DC371B;
+
 *{
   box-sizing: border-box;
 }
+
 body{
   background-image:url("images/bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $boxGray;
   background-blend-mode: multiply;
   /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg.jpg");*/
   /*font-family: sans-serif;*/
@@ -21,20 +25,16 @@ body{
   position: relative;
 
 }
-textarea{
-  resize:none;
-  box-shadow: inset 1px 1px rgba(170, 170, 170, 0.5);
-  border: solid 1px rgba(170, 170, 170, 0.5);
-  color: rgba(170, 170, 170, 0.5);
-  padding: 3px 0px 3px 5px;
-}
+/* General Adjustments */
 
-textarea:required{
-
-}
 ul{
   list-style: none;
 }
+
+a{
+  text-decoration: none;
+}
+/*Top Header Subscribe Area */
 
 #subs{
   display:inline-block;
@@ -104,6 +104,8 @@ ul{
 
 }
 
+/* Nav Menu Area */
+
 nav {
   width: 50%;
   /*width: 610px;*/
@@ -122,6 +124,7 @@ nav li{
   font-size: 10px;
   line-height: 25px;
   font-weight: lighter;
+  overflow: hidden;
 }
 
 .nav-menu{
@@ -131,8 +134,8 @@ nav li{
   /*height: 25px;*/
   background-color:#DC371B;
   text-align: center;
-  font-family:sans-serif;
-  box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
+  font-family:tahoma, sans-serif;
+  box-shadow: 0px 2px $boxGray;
 }
 
 .dotnav{
@@ -148,58 +151,16 @@ nav li{
   height: 10px;
   border-radius: 100%;
   background-color: white;
-  box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
+  box-shadow: 0px 2px $boxGray;
 }
 
 .dotnav li:nth-child(1){
-  background-color: #DC371B;
+  background-color: $peraltaRed;
   border: 3.3px solid white;
 }
-footer {
-  width: 50%;
-  /*width: 610px;*/
-  height: 210px;
-  margin: 10px auto;
-  border: 5px solid white;
-  overflow:hidden;
-  position: relative;
-  background-color: white;
-  color: black;
-  font-family: sans-serif;
-  box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
 
+/* Camera Man Section */
 
-}
-footer section:nth-child(1){
-  width: 55%;
-  display: inline-block;
-  padding: 5px;
-  vertical-align: top;
-}
-
-footer section:nth-child(2){
-  width: 44%;
-  display: inline-block;
-  padding: 5px;
-  color: gray;
-}
-footer p{
-  color: gray;
-  font-size:12px;
-}
-footer ul{
-  display: inline;
-  padding: 0;
-}
-
-footer li{
-  display: inline;
-
-}
-footer li img{
-  height: 20px;
-  -webkit-filter: grayscale(100%);
-}
 #logo img {
   width: 40%;
   position: absolute;
@@ -224,6 +185,12 @@ footer li img{
   left: -11.5%;
 
 }
+.top-image{
+box-shadow: 0px 2px $boxGray;
+padding-bottom: 17.2%;
+
+}
+/* NEWS SECTION */
 
 .news {
   /*border-left: 5px solid white;
@@ -240,12 +207,10 @@ footer li img{
   margin: 2px;
   color: gray;
   font-size: 8px;
-  /*height: 100%;   --------------keep an eye on this might be trouble*/
   vertical-align: top;
   padding: 10px;
-  padding-bottom: 17.2%;
   font-family: tahoma,sans-serif;
-  box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
+  box-shadow: 0px 2px $boxGray;
   /*border: 5px solid white;*/
 }
 
@@ -259,7 +224,7 @@ footer li img{
 }
 
 .more{
-  color: #DC371B;
+  color: $peraltaRed;
   font-weight: bold;
   font-size: 10px;
   vertical-align: bottom;
@@ -274,36 +239,11 @@ footer li img{
   margin-top:5px;
   margin-bottom:5px;
 }
-.boards{
-  background-color:white;
-  height: 210px;
-  position: relative;
-  box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
-}
-
-.boards ul{
-  padding: 0;
-  margin: 0 auto;
-  width: 100%;
-
-}
-.boards li{
-  display: inline-block;
-  margin: 0 4.2px;
-  position: relative;
-}
-
-.boards li img{
-  height: 200px;
-  position: relative;
-}
 
 
-.top-image{
-box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
-padding-bottom: 17.2%;
 
-}
+
+/* Sk8er Profiles */
 
 .profiles{
   /*height: 270px;*/
@@ -328,7 +268,7 @@ padding-bottom: 17.2%;
   flex:1;
   overflow:hidden;
   position:relative;
-  display; flex;
+  display: flex;
   padding-bottom: 44.2%;
 /*  padding-bottom: 25%;*/
 
@@ -347,7 +287,7 @@ padding-bottom: 17.2%;
   flex:1;
   overflow:hidden;
   position: relative;
-  display; flex;
+  display: flex;
   padding-bottom: 22.1%;
 }
 .top-left:hover{
@@ -395,7 +335,7 @@ padding-bottom: 17.2%;
 }
 .right img{
   height: 100%;
-  left:-102%;
+  left:-105%;
 
 }
 
@@ -435,46 +375,33 @@ padding-bottom: 17.2%;
    margin-top:50%;
 }
 
-
-input {
-  box-shadow: inset 1px 1px rgba(170, 170, 170, 0.5);
-}
-
-
-input[type=submit]{
-  background-color: #DC371B;
-  border: none;
-  color: white;
-  width: 50%;
-  position: relative;
-  left: 49%;
-}
-form{
-  position: relative;
-  padding: 18px 10px 10px 10px;
-}
+/* Arrow */
 
 .arrow-holder{
   position: relative;
+
 }
 .arrow{
-  width: 160px;
+  width: 13.2%;
+  /*width: 160px;*/
     height: 66px;
-    background-color:#DC371B;
+    background-color:$peraltaRed;
     display: inline-block;
     position: absolute;
+    /*top: 40%;*/
     top: 37px;
-    left: 10%;
-    box-shadow: 0px 2px rgba(170, 170, 170, 0.5);
+    left: 8%;
+    box-shadow: 0px 2px $boxGray;
     color: white;
     font-family: sans-serif;
     text-align: center;
 }
 .arrow p{
+  /*margin-top: 4%;*/
   margin-top: 24px;
 }
 .arrow:before {
-  border-bottom: 34px solid #DC371B;
+  border-bottom: 34px solid $peraltaRed;
   border-left: 34px solid transparent;
   border-right: 34px solid transparent;
   content: "";
@@ -488,10 +415,122 @@ form{
 }
 
 
+/* Boards Area */
 
-/*.top-image{
-  @-webkit-animation: borderFlash 3s infinite;
-}*/
+.boards{
+  background-color:white;
+  /*padding-bottom: 17.2%;*/
+  position: relative;
+  box-shadow: 0px 2px $boxGray;
+}
+
+.skateboards{
+  text-align: center;
+  img{
+    width: 8.5%;
+    margin: 0 0.25%;
+  }
+}
+/* Older version of the skateboards to be held just in case
+.boards ul{
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+
+} */
+/*
+.boards li{
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  padding: 0.75%;
+  *//*width: 6%;}*/
+
+
+/*.boards li img{
+
+  height: 200px;*/
+  /*position: relative;}*/
+
+
+/* Footer Area */
+footer {
+  width: 50%;
+  /*width: 610px;*/
+  height: 210px;
+  margin: 10px auto;
+  border: 5px solid white;
+  overflow:hidden;
+  position: relative;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  box-shadow: 0px 2px $boxGray;
+
+
+}
+footer section:nth-child(1){
+  width: 55%;
+  display: inline-block;
+  padding: 5px;
+  vertical-align: top;
+}
+
+footer section:nth-child(2){
+  width: 44%;
+  display: inline-block;
+  padding: 5px;
+  color: gray;
+}
+footer p{
+  color: gray;
+  font-size:12px;
+}
+footer ul{
+  display: inline;
+  padding: 0;
+}
+
+footer li{
+  display: inline;
+
+}
+footer li img{
+  height: 20px;
+  -webkit-filter: grayscale(100%);
+}
+/*Form Area */
+textarea{
+  resize:none;
+  box-shadow: inset 1px 1px $boxGray;
+  border: solid 1px $boxGray;
+  color: $boxGray;
+  font-family: tahoma, sans-serif;
+  /*padding: 3px 2px 3px 5px;*/
+  padding: 1%;
+}
+
+input {
+  box-shadow: inset 1px 1px $boxGray;
+}
+
+
+input[type=submit]{
+  background-color: $peraltaRed;
+  border: none;
+  color: white;
+  width: 50%;
+  position: relative;
+  left: 49%;
+  padding-right: 1%;
+}
+form{
+  position: relative;
+  padding: 18px 10px 10px 10px;
+}
+
+
+/* Animation Section */
 
 .nav-menu{
   position:relative;
@@ -501,13 +540,13 @@ form{
   animation: kickFlip 1s infinite;
 }
 
-.boards li img:hover{
+.boards img:hover{
   animation: showOff 2s infinite;
 }
 
 @-webkit-keyframes borderFlash{
   0% {border-color:white;}
-  50% {border-color:#DC371B;}
+  50% {border-color:$peraltaRed;}
   100% {border-color:white;}
 }
 
@@ -523,4 +562,91 @@ form{
   50% {transform: rotate (30deg);}
   75% {transform: rotate (15deg);}
   100% {transform: rotate(0deg);}
+}
+
+@media (max-width:1100px){
+  .name-small p, .name-large p{
+    font-size: 26px;
+  }
+}
+@media (max-width:900px){
+    .nav-menu{
+      width: 49%;
+    }
+    .name-small p, .name-large p{
+      font-size: 20px;
+    }
+}
+
+@media (max-width:800px){
+  .arrow-holder{
+    display: none;
+  }
+  .container{
+    width: 75%;
+  }
+  .top-image{
+    padding-bottom:25.8%;
+  }
+  nav {
+    width: 75%;
+  }
+  footer{
+    width: 75%;
+  }
+}
+
+
+@media (max-width: 600px){
+  .nav-menu{
+    width: 99%;
+  }
+  .skateboards img{
+    width: 16%;
+  }
+}
+
+@media (max-width: 500px){
+  .container{
+    width: 90%;
+  }
+  .top-image{
+    padding-bottom:30.96%;
+  }
+  nav {
+    width: 90%;
+  }
+  .name-small p, .name-large p{
+    font-size: 16px;
+  }
+
+  .article{
+    display: none;
+  }
+
+  .more{
+    font-size: 8px;
+  }
+
+  li.social-left{
+    display: none;
+  }
+
+  .subscribe li img{
+    height: 35px;
+
+  }
+.subscribe{
+  text-align: center;
+  margin-bottom: 0%;
+}
+  #social{
+    float:none;
+    text-align: center;
+    margin-left: -25%;
+  }
+
+  footer{
+    width: 90%;
+  }
 }
