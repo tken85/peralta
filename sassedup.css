@@ -571,6 +571,7 @@ form {
   footer {
     width: 90%; } }
 
+/* phone only change to deal with different handling of flexbox. this would no longer display right on the desktop*/
 @media (max-width: 400px) {
   .bottom {
     padding-bottom: 0; } }

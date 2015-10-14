@@ -310,7 +310,7 @@ padding-bottom: 17.2%;
   position:relative;
   display: -webkit-flex;
   display: flex;
-  padding-bottom: 22.12%;
+ padding-bottom: 22.12%;
 }
 
 .top-right:hover{
@@ -696,6 +696,8 @@ form{
   }
 
 }
+
+/* phone only change to deal with different handling of flexbox. this would no longer display right on the desktop*/
 @media (max-width: 400px){
   .bottom{
     padding-bottom: 0;
